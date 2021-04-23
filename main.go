@@ -1,6 +1,6 @@
 package main
 
-import "goMicroservice2/Activity/calc"
+import "calc"
 
 func main() {
 	calc.Add(2, 3)
