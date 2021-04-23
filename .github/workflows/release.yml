@@ -1,19 +1,19 @@
-name: Release
+name: Release 
 
-on: 
+on:
   create:
     tags:
       - v*
       
 jobs:
-  release: 
-    name: Release on Github
+  release:
+    name: Release on GitHub
     runs-on: ubuntu-latest
     steps:
       - name: Check out codes
         uses: actions/checkout@v2
-        
-      - name: Validate Go Releaser Configuration
+      
+      - name: Validate Go Releaser configuration
         uses: docker://goreleaser/goreleaser:latest
         with:
           arg: check
