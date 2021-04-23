@@ -16,12 +16,12 @@ jobs:
       - name: Validate Go Releaser Configuration
         uses: docker://goreleaser/goreleaser:latest
         with:
-          args: check
+          arg: check
           
       - name: Create release on Github
         uses: docker://goreleaser/goreleaser:latest
         with:
-          args: release
+          arg: release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       
