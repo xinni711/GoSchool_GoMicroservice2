@@ -1,10 +1,10 @@
 package main
 
-// import "calc"
+import (
+	"fmt"
+)
 
 func main() {
-// 	calc.Add(2, 3)
-// 	calc.Substract(2, 3)
-// 	calc.Divide(2, 3)
-// 	calc.Multiply(2, 3)
+	fmt.Println(Add(1, 2))
+	fmt.Println(Add(2, 2))
 }
